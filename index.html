@@ -1,0 +1,154 @@
+﻿<html>
+<head>
+    <title>car</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+
+    <style>
+
+        .body {
+            z-index: -10;
+            width: 100%;
+            height: 1100px;
+            position: relative;
+        }
+
+        .ulimg1 {
+            width: 200px;
+            height: 200px;
+            margin-top: -6000px;
+            z-index: 100;
+            border-radius: 50%;
+            border: 5px solid black;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        .ulimg2 {
+            width: 200px;
+            height: 200px;
+            z-index: 10;
+            border-radius: 50%;
+            border: 5px solid black;
+            box-shadow: 5px 5px 5px black;
+            margin-top: 50px;
+        }
+
+        .ulimg3 {
+            width: 200px;
+            height: 200px;
+            z-index: 10;
+            border-radius: 50%;
+            border: 5px solid black;
+            box-shadow: 5px 5px 5px black;
+            margin-top: 50px;
+        }
+
+        .pro1 {
+            margin-left: 800px;
+            margin-top: -900px;
+            z-index: 10;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 5px solid black;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        .circle {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            z-index: -1;
+            margin-top: -950px;
+            margin-left: 300px;
+            position: absolute;
+            border: 5px solid black;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        .part1 {
+            width: 1800px;
+            height: 1200px;
+            border: 2px solid #033E3E;
+            border-radius: 50%;
+            z-index: -5;
+            margin-top: -800px;
+            margin-left: -700px;
+            position: absolute;
+        }
+
+        .list {
+            position: absolute;
+            margin-top: -750px;
+        }
+
+        .text1 {
+            font-size: 80px;
+            margin-top: -320px;
+            margin-left: 1300px;
+            font-family: Akronim;
+        }
+
+
+        .text2 {
+            font-size: 40px;
+            margin-top: -20px;
+            margin-left: 1300px;
+            font-family: Alex Brush;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <img id="bg" class="body" src="img/d5.jpg" />
+
+        <div class="list">
+            <ul>
+
+                <li><img class="ulimg1" src="img/RB.png" alt="car1" onclick="big1()"></li>
+                <li><img class="ulimg2" src="img/klogo.jpg" alt="car2" onclick="big2()"></li>
+                <li><img class="ulimg3" src="img/dior1.jpg" alt="car3" onclick="big3()"></li>
+            </ul>
+        </div>
+
+
+        <div>
+            <img id="idel" class="circle" src="img/se1.jpg" />
+        </div>
+
+        <div>
+            <img class="pro1" id="img11" src="img/p31.jpg" alt="car1">
+        </div>
+
+        <h2 class="text1">Makeup & Beauty Blog</h2>
+        <h4 class="text2">Discover the latest beauty trends & skincare tips on ja's makeup and beauty blog.</h4>
+
+    </div>
+    <script>
+        function big1() {
+            document.getElementById("img11").src = "img/p31.jpg";
+            document.getElementById("idel").src = "img/se1.jpg";
+            document.getElementById("bg").src = "img/d5.jpg";
+
+
+        }
+
+        function big2() {
+            document.getElementById("img11").src = "img/k1.jpg";
+            document.getElementById("idel").src = "img/ky1.png";
+            document.getElementById("bg").src = "img/d66.jpg";
+        }
+
+        function big3() {
+            document.getElementById("img11").src = "img/dior.jpg";
+            document.getElementById("idel").src = "img/gg2.png";
+            document.getElementById("bg").src = "img/d4.jpg";
+        }
+
+
+    </script>
+
+</body>
+</html>
